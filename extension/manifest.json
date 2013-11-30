@@ -1,15 +1,63 @@
-{
-  "name": "ChromeRepl",
-  "description": "A remote read-eval-print-loop for Chrome.",
-  "version": "0.2",
-  "background_page": "background.html",
-  "permissions": [
-    "http://*/", "https://*/",
-    "bookmarks", "chrome://favicon/", "contextMenus", "cookies",
-    "geolocation", "history", "idle", "notifications",
-    "tabs", "unlimitedStorage"
-  ],
-  "icons": {
-    "48": "icon48.png"
+{ "name": "ChromeRepl"
+, "description": "A remote read-eval-print-loop for Chrome."
+, "version": "0.3"
+, "manifest_version": 2
+, "background":
+  { "scripts":
+    [ "background.js"
+    ]
+  }
+, "permissions":
+  [ "http://*/"
+  , "https://*/"
+  , "alarms"
+  , "bookmarks"
+  , "browsingData"
+  , "chrome://favicon/"
+  , "clipboardRead"
+  , "clipboardWrite"
+  , "contentSettings"
+  , "contextMenus"
+  , "cookies"
+  , "debugger"
+//, "declarativeContent"
+//, "declarativeWebRequest"
+//, "desktopCapture"
+//, "dns"
+  , "downloads"
+  , "experimental"
+  , "fileBrowserHandler"
+  , "fontSettings"
+  , "geolocation"
+  , "history"
+  , "idle"
+//, "infobars"
+  , "management"
+  , "notifications"
+  , "pageCapture"
+  , "power"
+  , "privacy"
+//, "processes"
+  , "proxy"
+  , "pushMessaging"
+//, "sessions" // http://developer.chrome.com/extensions/sessions.html
+//, "signedInDevices"
+  , "storage"
+//, "system.cpu"
+  , "system.display"
+//, "system.memory"
+  , "system.storage"
+  , "tabCapture"
+  , "tabs"
+  , "topSites"
+  , "tts"
+  , "ttsEngine"
+  , "unlimitedStorage"
+  , "webNavigation"
+  , "webRequest"
+  , "webRequestBlocking"
+  ]
+, "icons":
+  { "48": "icon48.png"
   }
 }
